@@ -69,15 +69,26 @@ export default function EffectsSection() {
           </div>
         </div>
 
-        {/* Warning Graphic */}
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <motion.div 
-            whileHover={{ scale: 1.1, rotate: [0, -5, 5, 0] }}
-            transition={{ duration: 0.5 }}
-            style={{ width: '200px', height: '200px', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '3px dashed #d35400', borderRadius: '50%', backgroundColor: '#e2d6c1', color: '#d35400', fontSize: '1.2rem', textAlign: 'center', padding: '1.5rem', cursor: 'pointer' }}
-          >
-            [Imagen de advertencia a colocar en el futuro]
-          </motion.div>
+        {/* Warning Graphics */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', justifyContent: 'center', alignItems: 'center' }}>
+          <motion.img 
+            src="/efectos_gastro.png" 
+            alt="Efectos Gastrointestinales" 
+            whileHover={{ scale: 1.05 }} 
+            style={{ width: '250px', height: '250px', objectFit: 'contain', borderRadius: '50%', boxShadow: '5px 5px 0px rgba(0,0,0,0.15)', cursor: 'pointer' }} 
+          />
+          <motion.img 
+            src="/efectos_cardio.png" 
+            alt="Efectos Cardíacos" 
+            whileHover={{ scale: 1.05 }} 
+            style={{ width: '250px', height: '250px', objectFit: 'contain', borderRadius: '50%', boxShadow: '5px 5px 0px rgba(0,0,0,0.15)', cursor: 'pointer' }} 
+          />
+          <motion.img 
+            src="/efectos_visual.png" 
+            alt="Efectos Visuales" 
+            whileHover={{ scale: 1.05 }} 
+            style={{ width: '250px', height: '250px', objectFit: 'contain', borderRadius: '50%', boxShadow: '5px 5px 0px rgba(0,0,0,0.15)', cursor: 'pointer' }} 
+          />
         </div>
 
       </motion.div>

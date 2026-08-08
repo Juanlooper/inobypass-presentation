@@ -56,13 +56,13 @@ export default function IndicationsSection() {
 
         {/* Pill taking image */}
         <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <motion.div 
+          <motion.img 
+            src="/retro_pill_taking.png"
+            alt="Cómo tomar"
             whileHover={{ scale: 1.05, rotate: 2 }}
             transition={{ type: 'spring', stiffness: 300 }}
-            style={{ width: '100%', maxWidth: '300px', minHeight: '250px', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '3px dashed #1a3320', borderRadius: '16px', backgroundColor: '#e2d6c1', color: '#1a3320', fontSize: '1.4rem', textAlign: 'center', padding: '2rem', cursor: 'pointer' }}
-          >
-            [Imagen tomando pastilla a colocar en el futuro]
-          </motion.div>
+            style={{ width: '100%', maxWidth: '300px', objectFit: 'contain', border: '3px solid #1a3320', borderRadius: '16px', boxShadow: '8px 8px 0px rgba(0,0,0,0.15)', cursor: 'pointer' }}
+          />
         </div>
 
       </motion.div>

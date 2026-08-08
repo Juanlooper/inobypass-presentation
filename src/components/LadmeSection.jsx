@@ -29,27 +29,27 @@ export default function LadmeSection() {
     'L': {
       title: 'Liberación Controlada',
       text: 'El polímero matricial protege al fármaco en el estómago y permite una liberación lenta, prolongada y sostenida a lo largo del intestino delgado.',
-      img: '/ladme_l.png'
+      img: '/ladme_l_nueva.png'
     },
     'A': {
       title: 'Absorción Predecible',
       text: 'Se absorbe por difusión pasiva a través de los enterocitos. Al ser completamente inmune a la degradación por las bacterias intestinales, su biodisponibilidad oral es siempre del 98%, manteniéndose estable y predecible. Si el paciente toma antibióticos que causan disbiosis, la absorción del InoBypass® no se altera, evitando así cualquier riesgo de toxicidad aguda.',
-      img: '/ladme_a.png'
+      img: '/ladme_a_nueva.png'
     },
     'D': {
       title: 'Distribución Cardíaca',
       text: 'Posee alta afinidad por el tejido del músculo cardíaco (miocardio) y viaja unida a la albúmina plasmática en un 60%.',
-      img: '/ladme_d.png'
+      img: '/ladme_d_nueva.png'
     },
     'M': {
       title: 'Metabolismo Hepático Exclusivo',
       text: 'Su biotransformación es exclusivamente hepática (Fase I y Fase II mediante enzimas CYP), transformándose en compuestos más hidrofílicos. No sufre ningún tipo de metabolismo bacteriano presistémico en el intestino.',
-      img: '/ladme_m.png'
+      img: '/ladme_m_nueva.png'
     },
     'E': {
       title: 'Excreción Renal',
       text: 'Se elimina principalmente por vía renal (en la orina).',
-      img: '/ladme_e.png'
+      img: '/ladme_e_nueva.png'
     }
   };
 
@@ -109,28 +109,20 @@ export default function LadmeSection() {
           >
             {/* Image side */}
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <motion.div 
-                initial={{ scale: 0.9 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.4 }}
+              <motion.img 
+                src={content[activeTab].img}
+                alt={content[activeTab].title}
+                whileHover={{ scale: 1.02 }}
                 style={{ 
                   width: '100%', 
-                  maxWidth: '350px',
-                  minHeight: '250px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  border: '3px dashed #1a3320', 
+                  maxWidth: '400px',
+                  objectFit: 'contain',
+                  border: '3px solid #1a3320', 
                   borderRadius: '16px', 
-                  backgroundColor: '#e2d6c1',
-                  color: '#1a3320',
-                  fontSize: '1.4rem',
-                  textAlign: 'center',
-                  padding: '2rem'
+                  boxShadow: '8px 8px 0px rgba(0,0,0,0.15)',
+                  cursor: 'pointer'
                 }}
-              >
-                [Imagen de {content[activeTab].title} a colocar en el futuro]
-              </motion.div>
+              />
             </div>
 
             {/* Text side */}

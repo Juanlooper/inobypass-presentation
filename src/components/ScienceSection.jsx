@@ -39,13 +39,13 @@ export default function ScienceSection() {
         
         {/* Shield graphic */}
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-           <motion.div 
-             animate={{ y: [-10, 10, -10] }}
+           <motion.img 
+             src="/que_necesitas_saber.png"
+             alt="Qué necesita saber"
+             animate={{ y: [-5, 5, -5] }}
              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-             style={{ width: '100%', maxWidth: '400px', minHeight: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '3px dashed #1a3320', borderRadius: '16px', backgroundColor: '#e2d6c1', color: '#1a3320', fontSize: '1.4rem', textAlign: 'center', padding: '2rem' }}
-           >
-             [Imagen del escudo a colocar en el futuro]
-           </motion.div>
+             style={{ width: '100%', maxWidth: '400px', objectFit: 'contain', filter: 'drop-shadow(10px 10px 0px rgba(0,0,0,0.15))' }}
+           />
         </div>
         
         {/* Science Text */}
