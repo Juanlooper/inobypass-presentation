@@ -3,14 +3,17 @@ import './App.css';
 import HeroSection from './components/HeroSection';
 import DoctorSection from './components/DoctorSection';
 import ScienceSection from './components/ScienceSection';
+import LadmeSection from './components/LadmeSection';
 import InteractionsSection from './components/InteractionsSection';
 import IndicationsSection from './components/IndicationsSection';
 import EffectsSection from './components/EffectsSection';
 import FormulaSection from './components/FormulaSection';
+import FallingPillsBackground from './components/FallingPillsBackground';
 
 function App() {
   return (
     <>
+      <FallingPillsBackground />
       <div className="noise-overlay"></div>
       <div className="scroll-container">
         
@@ -20,6 +23,10 @@ function App() {
 
         <section className="scroll-section">
           <DoctorSection />
+        </section>
+
+        <section className="scroll-section">
+          <LadmeSection />
         </section>
 
         <section className="scroll-section">

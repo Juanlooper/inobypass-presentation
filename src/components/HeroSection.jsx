@@ -36,10 +36,19 @@ export default function HeroSection() {
       <div style={{ gridColumn: '1 / -1', textAlign: 'center', position: 'relative', paddingTop: '2rem' }}>
         <motion.div variants={starVariants} animate="animate" className="atomic-star" style={{ top: '20px', left: '15%', fontSize: '3rem' }}>✦</motion.div>
         
-        <h1 className="title-retro" style={{ fontSize: '9rem' }}>InoBypass<sup style={{ fontSize: '3rem', verticalAlign: 'super' }}>®</sup></h1>
-        <h2 className="subtitle-retro" style={{ fontSize: '2.2rem', marginTop: '-1rem' }}>Cripto-Inotropina <span style={{ marginLeft: '2rem' }}>1.5 mg</span></h2>
+        <motion.img 
+          src="/LOGO.png" 
+          alt="InoBypass Logo"
+          style={{ width: '100%', maxWidth: '600px', objectFit: 'contain', margin: '0 auto' }}
+        />
+        <h2 className="subtitle-retro" style={{ fontSize: '2.5rem', marginTop: '1rem' }}>Cripto-Inotropina <span style={{ marginLeft: '1rem', color: '#d35400' }}>1.5 mg</span></h2>
         
         <motion.div variants={starVariants} animate="animate" className="atomic-star" style={{ bottom: '20px', right: '15%', fontSize: '3rem' }}>✦</motion.div>
+
+        {/* New decorations to fill empty space */}
+        <motion.div variants={starVariants} animate="animate" className="atomic-star" style={{ top: '80px', left: '5%', fontSize: '2rem', color: '#d35400' }}>✦</motion.div>
+        <motion.div variants={starVariants} animate="animate" className="atomic-star" style={{ top: '100px', right: '8%', fontSize: '1.5rem', color: '#f1c40f' }}>✦</motion.div>
+        <motion.div variants={starVariants} animate="animate" className="atomic-star" style={{ bottom: '0', left: '25%', fontSize: '2.5rem', color: '#1a3320', opacity: 0.3 }}>✦</motion.div>
       </div>
 
       {/* Badge absolute positioned top right */}
@@ -53,14 +62,25 @@ export default function HeroSection() {
       </motion.div>
 
       {/* Bottom Left - Heart Graphic */}
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', paddingBottom: '2rem' }}>
-        <motion.img 
-          src="/retro_heart.png" 
-          alt="Corazón anatómico retro"
-          animate={{ scale: [1, 1.05, 1] }}
-          transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
-          style={{ width: '100%', maxWidth: '350px', objectFit: 'contain', filter: 'drop-shadow(5px 5px 0px rgba(0,0,0,0.15))' }}
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingBottom: '2rem', position: 'relative' }}>
+        {/* Background decorative circle for the video to make it less empty */}
+        <motion.div 
+          animate={{ scale: [1, 1.1, 1] }} 
+          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+          style={{ position: 'absolute', width: '300px', height: '300px', backgroundColor: '#f1c40f', borderRadius: '50%', zIndex: 0, opacity: 0.3 }} 
         />
+        <motion.video 
+          autoPlay
+          loop
+          muted
+          playsInline
+          animate={{ scale: [1, 1.05, 1] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          style={{ width: '100%', maxWidth: '480px', objectFit: 'contain', filter: 'drop-shadow(15px 15px 0px rgba(0,0,0,0.25))', backgroundColor: 'transparent', zIndex: 1 }}
+        >
+          <source src="/InoBypass_360_completo_60fps_transparente.webm" type="video/webm" />
+          <source src="/InoBypass_360_completo_60fps.mp4" type="video/mp4" />
+        </motion.video>
       </div>
 
       {/* Bottom Right - Banners */}

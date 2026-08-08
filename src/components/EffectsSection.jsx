@@ -71,13 +71,13 @@ export default function EffectsSection() {
 
         {/* Warning Graphic */}
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <motion.img 
-            src="/retro_eye_warning.png"
-            alt="Advertencia de Xantopsia"
+          <motion.div 
             whileHover={{ scale: 1.1, rotate: [0, -5, 5, 0] }}
             transition={{ duration: 0.5 }}
-            style={{ width: '100%', maxWidth: '200px', objectFit: 'contain', borderRadius: '50%', boxShadow: '0px 0px 15px rgba(211,84,0,0.5)', cursor: 'pointer' }}
-          />
+            style={{ width: '200px', height: '200px', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '3px dashed #d35400', borderRadius: '50%', backgroundColor: '#e2d6c1', color: '#d35400', fontSize: '1.2rem', textAlign: 'center', padding: '1.5rem', cursor: 'pointer' }}
+          >
+            [Imagen de advertencia a colocar en el futuro]
+          </motion.div>
         </div>
 
       </motion.div>

@@ -39,13 +39,13 @@ export default function ScienceSection() {
         
         {/* Shield graphic */}
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-           <motion.img 
-             src="/retro_shield.png"
-             alt="Blindaje Estérico"
+           <motion.div 
              animate={{ y: [-10, 10, -10] }}
              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-             style={{ width: '100%', maxWidth: '400px', objectFit: 'contain', border: '3px solid #1a3320', borderRadius: '16px', boxShadow: '8px 8px 0px rgba(0,0,0,0.15)' }}
-           />
+             style={{ width: '100%', maxWidth: '400px', minHeight: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '3px dashed #1a3320', borderRadius: '16px', backgroundColor: '#e2d6c1', color: '#1a3320', fontSize: '1.4rem', textAlign: 'center', padding: '2rem' }}
+           >
+             [Imagen del escudo a colocar en el futuro]
+           </motion.div>
         </div>
         
         {/* Science Text */}

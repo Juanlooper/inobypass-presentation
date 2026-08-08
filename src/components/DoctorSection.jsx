@@ -37,10 +37,10 @@ export default function DoctorSection() {
         {/* Doctor Graphic */}
         <div style={{ display: 'flex', justifyContent: 'center' }}>
            <motion.img 
-             src="/retro_doctor.png"
-             alt="Doctor Retro"
-             whileHover={{ scale: 1.05 }}
-             style={{ width: '100%', maxWidth: '300px', objectFit: 'contain', border: '3px solid #1a3320', borderRadius: '16px', boxShadow: '8px 8px 0px rgba(0,0,0,0.15)', cursor: 'pointer' }}
+             src="/doctor_nueva.png"
+             alt="Doctor"
+             whileHover={{ scale: 1.02 }}
+             style={{ width: '100%', maxWidth: '450px', objectFit: 'contain', filter: 'drop-shadow(5px 5px 0px rgba(0,0,0,0.15))', cursor: 'pointer' }}
            />
         </div>
 

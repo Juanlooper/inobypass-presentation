@@ -56,13 +56,13 @@ export default function IndicationsSection() {
 
         {/* Pill taking image */}
         <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <motion.img 
+          <motion.div 
             whileHover={{ scale: 1.05, rotate: 2 }}
             transition={{ type: 'spring', stiffness: 300 }}
-            src="/retro_pill_taking.png" 
-            alt="Tomando pastilla"
-            style={{ width: '100%', maxWidth: '300px', objectFit: 'contain', border: '3px solid #1a3320', borderRadius: '16px', boxShadow: '8px 8px 0px rgba(0,0,0,0.15)', cursor: 'pointer' }}
-          />
+            style={{ width: '100%', maxWidth: '300px', minHeight: '250px', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '3px dashed #1a3320', borderRadius: '16px', backgroundColor: '#e2d6c1', color: '#1a3320', fontSize: '1.4rem', textAlign: 'center', padding: '2rem', cursor: 'pointer' }}
+          >
+            [Imagen tomando pastilla a colocar en el futuro]
+          </motion.div>
         </div>
 
       </motion.div>
@@ -81,6 +81,7 @@ export default function IndicationsSection() {
           <ul style={{ fontSize: '1.4rem', lineHeight: '1.6', color: '#1a3320', paddingLeft: '2rem' }}>
             <li><strong>Cinética de absorción:</strong> Orden cero (velocidad constante, sin fluctuaciones bruscas).</li>
             <li><strong>Vida Media plasmática:</strong> 28 horas (meseta estable con 1 dosis diaria).</li>
+            <li><strong>Naturaleza Ácido-Base (pKa 8.2):</strong> Es una base débil. Se encuentra en su forma no ionizada (lipofílica) en el entorno ligeramente alcalino del intestino delgado, lo que maximiza su absorción transcelular.</li>
           </ul>
         </motion.div>
 
