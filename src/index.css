@@ -287,3 +287,235 @@ body {
   box-shadow: none;
   transform: none;
 }
+
+/* Navigation Menu */
+.retro-nav-btn {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 1000;
+  background-color: var(--color-orange);
+  color: var(--color-cream);
+  border: 3px solid var(--color-text-dark);
+  padding: 0.8rem 1.5rem;
+  font-family: var(--font-logo);
+  font-size: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+  transition: all 0.1s ease;
+}
+
+.retro-nav-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+
+.nav-overlay-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 9998;
+}
+
+.nav-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  z-index: 9999;
+  border-radius: 0;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  overflow-y: auto;
+}
+
+.close-nav-btn {
+  align-self: flex-end;
+  background: none;
+  border: 2px dashed var(--color-text-dark);
+  color: var(--color-text-dark);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.close-nav-btn:hover {
+  background-color: var(--color-mint);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-link-btn {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--color-text-dark);
+  padding: 1rem;
+  border-bottom: 2px solid rgba(26, 51, 32, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-link-btn:hover {
+  padding-left: 1.5rem;
+  color: var(--color-orange);
+  border-bottom-color: var(--color-orange);
+}
+
+/* Leaflet / Prospecto Credits Section */
+.leaflet-credits {
+  width: 100%;
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  margin-top: 6rem;
+}
+
+.leaflet-border {
+  background-color: var(--color-cream);
+  border: 5px solid var(--color-text-dark);
+  padding: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--color-text-dark);
+  position: relative;
+  box-shadow: 10px 10px 0px rgba(0,0,0,0.15);
+}
+
+.leaflet-title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.leaflet-divider {
+  border: none;
+  border-top: 3px solid var(--color-text-dark);
+  margin: 1.5rem 0;
+}
+
+.leaflet-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.leaflet-team {
+  margin: 2rem 0;
+}
+
+.leaflet-team ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.leaflet-team li {
+  font-size: 1.3rem;
+  border-bottom: 1px dotted rgba(26,51,32,0.4);
+  padding-bottom: 0.5rem;
+}
+
+.leaflet-footer-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.leaflet-subtitle {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.leaflet-text-small {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.leaflet-stamp {
+  margin-top: 3rem;
+  font-size: 1rem;
+  font-style: italic;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-text-dark);
+  padding-top: 0.5rem;
+}
+
+.leaflet-code {
+  font-weight: bold;
+  font-family: monospace;
+}
+
+/* Sello Sanidad */
+.leaflet-sanidad-stamp {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.stamp-circle {
+  width: 140px;
+  height: 140px;
+  border: 4px double var(--color-text-dark);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-15deg);
+  opacity: 0.8;
+}
+
+.stamp-text {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.stamp-subtext {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.7rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .leaflet-team ul, .leaflet-footer-columns {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
