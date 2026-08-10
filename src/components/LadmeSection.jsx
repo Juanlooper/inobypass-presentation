@@ -29,27 +29,27 @@ export default function LadmeSection() {
     'L': {
       title: 'Liberación Controlada',
       text: 'El polímero matricial protege al fármaco en el estómago y permite una liberación lenta, prolongada y sostenida a lo largo del intestino delgado.',
-      img: '/ladme_l_nueva.png'
+      img: '/ladme_l_final.jpg'
     },
     'A': {
       title: 'Absorción Predecible',
       text: 'Se absorbe por difusión pasiva a través de los enterocitos. Al ser completamente inmune a la degradación por las bacterias intestinales, su biodisponibilidad oral es siempre del 98%, manteniéndose estable y predecible. Si el paciente toma antibióticos que causan disbiosis, la absorción del InoBypass® no se altera, evitando así cualquier riesgo de toxicidad aguda.',
-      img: '/ladme_a_nueva.png'
+      img: '/ladme_a_final.jpg'
     },
     'D': {
       title: 'Distribución Cardíaca',
       text: 'Posee alta afinidad por el tejido del músculo cardíaco (miocardio) y viaja unida a la albúmina plasmática en un 60%.',
-      img: '/ladme_d_nueva.png'
+      img: '/ladme_d_final.jpg'
     },
     'M': {
       title: 'Metabolismo Hepático Exclusivo',
       text: 'Su biotransformación es exclusivamente hepática (Fase I y Fase II mediante enzimas CYP), transformándose en compuestos más hidrofílicos. No sufre ningún tipo de metabolismo bacteriano presistémico en el intestino.',
-      img: '/ladme_m_nueva.png'
+      img: '/ladme_m_final.jpg'
     },
     'E': {
       title: 'Excreción Renal',
       text: 'Se elimina principalmente por vía renal (en la orina).',
-      img: '/ladme_e_nueva.png'
+      img: '/ladme_e_final.jpg'
     }
   };
 

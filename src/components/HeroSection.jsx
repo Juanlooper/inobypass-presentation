@@ -56,30 +56,29 @@ export default function HeroSection() {
         animate={{ scale: [1, 1.05, 1], rotate: [-5, -3, -5] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         className="badge" 
-        style={{ position: 'absolute', top: '2rem', right: '2rem', maxWidth: '250px', textAlign: 'center', fontSize: '1.5rem' }}
+        style={{ position: 'absolute', top: '2rem', right: '2rem', maxWidth: '300px', textAlign: 'center', fontSize: '1.7rem', padding: '1.2rem 1.5rem' }}
       >
         ¡LA MARAVILLA BIOFARMACÉUTICA!
       </motion.div>
 
       {/* Bottom Left - Heart Graphic */}
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingBottom: '2rem', position: 'relative' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', width: '100%', height: '100%', minHeight: '350px' }}>
         {/* Background decorative circle for the video to make it less empty */}
         <motion.div 
-          animate={{ scale: [1, 1.1, 1] }} 
+          animate={{ scale: [1, 1.05, 1] }} 
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-          style={{ position: 'absolute', width: '300px', height: '300px', backgroundColor: '#f1c40f', borderRadius: '50%', zIndex: 0, opacity: 0.3 }} 
+          style={{ position: 'absolute', width: '80%', paddingTop: '80%', backgroundColor: '#f1c40f', borderRadius: '50%', zIndex: 0, opacity: 0.3 }} 
         />
         <motion.video 
           autoPlay
           loop
           muted
           playsInline
-          animate={{ scale: [1, 1.05, 1] }}
+          animate={{ scale: [1, 1.02, 1] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          style={{ width: '100%', maxWidth: '480px', objectFit: 'contain', filter: 'drop-shadow(15px 15px 0px rgba(0,0,0,0.25))', backgroundColor: 'transparent', zIndex: 1 }}
+          style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'contain', backgroundColor: 'transparent', mixBlendMode: 'darken', zIndex: 1 }}
         >
-          <source src="/InoBypass_360_completo_60fps_transparente.webm" type="video/webm" />
-          <source src="/InoBypass_360_completo_60fps.mp4" type="video/mp4" />
+          <source src="/video.mp4" type="video/mp4" />
         </motion.video>
       </div>
 
