@@ -24,11 +24,11 @@ export default function CreditsSection() {
 
         <div className="leaflet-team">
           <ul>
-            <li><strong>[Nombre del Estudiante 1]</strong> – Investigador Desarrollador</li>
-            <li><strong>[Nombre del Estudiante 2]</strong> – Investigador Desarrollador</li>
-            <li><strong>[Nombre del Estudiante 3]</strong> – Investigador Desarrollador</li>
-            <li><strong>[Nombre del Estudiante 4]</strong> – Investigador Desarrollador</li>
-            <li><strong>[Nombre del Estudiante 5]</strong> – Investigador Desarrollador</li>
+            <li><strong>Ambar Cedeño</strong> – Investigador Desarrollador</li>
+            <li><strong>Ana Montilla</strong> – Investigador Desarrollador</li>
+            <li><strong>Bárbara Pérez</strong> – Investigador Desarrollador</li>
+            <li><strong>Yuliana Díaz</strong> – Investigador Desarrollador</li>
+            <li><strong>Ramón Cedeño</strong> – Investigador Desarrollador</li>
           </ul>
         </div>
 
