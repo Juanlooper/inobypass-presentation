@@ -63,6 +63,10 @@ export default function CreditsSection() {
           <p>Impreso y revisado en Julio, 1960.</p>
           <p className="leaflet-code">C.I.-4092-B</p>
         </div>
+        
+        <p style={{ fontSize: '0.75rem', marginTop: '1.5rem', textAlign: 'center', opacity: 0.8 }}>
+          Laboratorios@inobypass.com
+        </p>
       </div>
     </motion.div>
   );
