@@ -57,7 +57,7 @@ export default function FormulaSection() {
                <li>Mantener fuera de la vista y del alcance de los niños.</li>
                <li>Consérvese a no más de 30°C y en lugar seco.</li>
                <li>Mantenga el blíster protegido de la luz y la humedad.</li>
-               <li>No utilice después de la fecha "CAD".</li>
+               <li>No utilice después de la fecha "caducididad".</li>
                <li>Deposite envases que no necesite en el Punto SIGRE.</li>
              </ul>
              <button className="retro-btn" onClick={() => setActiveImage('/conservacion_1.png')} style={{ marginTop: '2rem', alignSelf: 'center', padding: '0.8rem 1.5rem', fontSize: '1.2rem' }}>

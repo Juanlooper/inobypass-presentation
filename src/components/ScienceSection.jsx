@@ -32,7 +32,7 @@ export default function ScienceSection() {
       <div className="panel-corner" style={{ bottom: '-2px', right: '-2px', borderLeft: 'none', borderTop: 'none' }}></div>
 
       <motion.h3 variants={itemVariants} style={{ fontSize: '2.5rem', letterSpacing: '2px', color: '#1a3320', textTransform: 'uppercase', borderBottom: '4px solid #1a3320', paddingBottom: '1rem', marginBottom: '1rem', fontFamily: 'var(--font-logo)' }}>
-        2. Qué necesita saber antes de empezar
+        2. Qué debes saber antes de empezar a tomar InoBypass
       </motion.h3>
 
       <motion.div variants={itemVariants} className="grid-1-1">
